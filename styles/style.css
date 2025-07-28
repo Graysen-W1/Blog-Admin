@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* all imports go at the top ^ */
+
+body {
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.d-flex {
+    margin-top: 19px;
+    margin-left: 19px;
+}
+
+
+.col-12.shadow {
+    background-color: #e9ecef; 
+    border: 1px solid #ced4da;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.footer {
+    /* source: https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+    padding: 0px;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+
+.card {
+    background-color: #f8f9fa;  /* Light gray background */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #000000 !important;  /* Custom header color */
+    border-bottom: 1px solid #ffffff;
+}
+
+.card-body {
+    background-color: #ffffff;  /* White body background */
+    padding: 20px;
+}
+
+

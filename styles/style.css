@@ -5,7 +5,7 @@
 
 body {
     background-color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: Outfit;
 }
 
 .d-flex {
@@ -35,19 +35,19 @@ body {
 }
 
 .card {
-    background-color: #f8f9fa;  /* Light gray background */
+    background-color: #f8f9fa;  
     border: 1px solid #dee2e6;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 .card-header {
-    background-color: #000000 !important;  /* Custom header color */
+    background-color: #000000 !important; 
     border-bottom: 1px solid #ffffff;
 }
 
 .card-body {
-    background-color: #ffffff;  /* White body background */
+    background-color: #ffffff; 
     padding: 20px;
 }
 

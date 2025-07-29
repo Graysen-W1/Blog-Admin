@@ -23,12 +23,6 @@ function show(list) {
         html += '<div class="card-body">';
         html += '<p>' + post.text + '</p>';
         html += '<small class="text-muted">Date: ' + post.date + ' | Topic: ' + post.topic + ' | Author: ' + post.author + '</small>';
-        
-        if (post.tags && post.tags.length > 0) {
-            html += '<div class="mt-2">';
-            html += '<span class="badge bg-secondary me-1">' + post.tags.join('</span><span class="badge bg-secondary me-1">') + '</span>';
-            html += '</div>';
-        }
 
         html += '<div class="mt-3">';
         html += '<button class="btn btn-warning me-2" onclick="edit(' + i + ')">Edit</button>';
@@ -68,15 +62,13 @@ function sortPosts() {
 
 function saveNewPost() {
     const get = function(id) { return document.getElementById(id).value || '...'; };
-    const tags = get('postTags').split(',');
     
     posts.unshift({
         title: get('postTitle') || 'Untitled',
         topic: get('postTopic'),
         date: get('postDate'),
         text: get('postContent'),
-        author: get('postAuthor'),
-        tags: tags
+        author: get('postAuthor')
     });
     
     show(posts);
@@ -94,7 +86,6 @@ function edit(i) {
     const date = prompt('Date (if not, click okay):', p.date);
     const text = prompt('Content (if not, click okay):', p.text);
     const author = prompt('Author (if not, click okay):', p.author);
-    const tags = prompt('Tags (separate with commas, if not, click okay):', p.tags ? p.tags.join(', ') : '');
     
     if (title !== null) {
         posts[i].title = title || p.title;
@@ -102,7 +93,6 @@ function edit(i) {
         posts[i].date = date || p.date;
         posts[i].text = text || p.text;
         posts[i].author = author || p.author;
-        posts[i].tags = tags ? tags.split(',') : p.tags;
         show(posts);
         toast('Post updated!');
     }

@@ -1,7 +1,7 @@
 const url = 'https://graysen-W1.github.io/Blog-Data/blog-entries.json';
 let posts = [];
 
-// This loads JSON data from server
+// This loads JSON data 
 // source: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 function loadDataFromServer() {
     fetch(url)
